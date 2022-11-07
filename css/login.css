@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P", cursive;
+}
+
+body {
+    background-image: url("/img/background-login.jpeg");
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-conteiner {
+    text-align: center;
+    background-color: grey;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+#form-conteiner {
+    display: inline-block;
+}
+
+#login-conteiner h1 {
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 4px 5px 6px rgba(255,255,255,0.6);
+    margin-bottom: 20px;
+}
+
+#login-conteiner input {
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+#login-conteiner button {
+    width: 40%;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+#login-conteiner button:hover {
+    transition: .5s;
+    background-color: white;
+    color: black;
+}
+
