@@ -40,3 +40,43 @@ body {
     margin-right: 30px;
     font-size: 25px;
 }
+
+#cards-conteiner {
+    position: absolute;
+    display: grid;
+    top: 10px;
+    grid-template-columns: repeat(4, 130px);
+    gap: 20px;
+    margin-top: 70px;
+}
+
+.cards {
+    position: relative;
+    width: 130px;
+    height: 170px;
+    background-color: aqua;
+    transform-style: preserve-3d;
+}
+
+.cards:hover {
+    transition: all 500ms ease;
+    transform: rotateY(180deg);
+}
+
+.img {
+    position: absolute;
+    width: 130px;
+    height: 170px;
+    border: 2px solid black;
+    background-size: cover;
+    background-position: center;
+}
+
+.front {
+    background-image: url("/img/front-img.jpg");
+}
+
+.back {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
