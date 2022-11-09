@@ -56,10 +56,10 @@ body {
     height: 170px;
     background-color: aqua;
     transform-style: preserve-3d;
+    transition: all 500ms ease;
 }
 
-.cards:hover {
-    transition: all 500ms ease;
+.hide {
     transform: rotateY(180deg);
 }
 
@@ -79,4 +79,8 @@ body {
 .back {
     transform: rotateY(180deg);
     backface-visibility: hidden;
+}
+
+.transparent-card {
+    filter: saturate(25%);
 }
